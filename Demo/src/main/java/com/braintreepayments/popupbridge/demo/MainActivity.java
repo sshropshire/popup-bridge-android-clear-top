@@ -8,6 +8,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+    //Marco
 
     private static final String POPUP_BRIDGE_URL = "https://braintree.github.io/popup-bridge-example/";
     private static final String PAYPAL_POPUP_BRIDGE_URL = "https://braintree.github.io/popup-bridge-example/paypal";
