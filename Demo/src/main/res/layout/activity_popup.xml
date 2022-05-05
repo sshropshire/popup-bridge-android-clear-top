@@ -6,5 +6,13 @@
     <WebView
         android:id="@+id/web_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="300dp"/>
+
+    <Button
+        android:id="@+id/button_popup_bridge_paypal_Xiaomi_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onTurnInTmpActivity"
+        android:textAllCaps="false"
+        android:text="This is our product station page and I need to jump into Shopping Cart Page(Click)"/>
 </LinearLayout>

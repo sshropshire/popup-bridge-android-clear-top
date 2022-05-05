@@ -3,13 +3,14 @@ package com.braintreepayments.popupbridge.demo;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.braintreepayments.api.PopupBridgeClient;
 
-public class PopupActivity extends AppCompatActivity {
+public class ProductStationAndOrderPageActivity extends AppCompatActivity {
 
     private WebView mWebView;
     private PopupBridgeClient mPopupBridgeClient;
@@ -43,5 +44,10 @@ public class PopupActivity extends AppCompatActivity {
                 .setMessage(message)
                 .setPositiveButton(android.R.string.ok, (dialog, which) -> dialog.dismiss())
                 .show();
+    }
+
+    public void onTurnInTmpActivity(View view) {
+        Intent intent = new Intent(this, ShooppingCartActivity.class);
+        startActivity(intent);
     }
 }
