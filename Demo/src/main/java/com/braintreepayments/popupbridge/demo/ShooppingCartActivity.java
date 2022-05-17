@@ -22,6 +22,7 @@ public class ShooppingCartActivity extends AppCompatActivity {
     cart a WebActivity. So we found your quick start in Repo not suitable to our mixed flow.*/
     public void onTmpClick(View view){
         Intent intent = new Intent(this, ProductStationAndOrderPageActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.putExtra("url", "https://braintree.github.io/popup-bridge-example/paypal");
         startActivity(intent);
     }
